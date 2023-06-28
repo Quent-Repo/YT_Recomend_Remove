@@ -1,0 +1,11 @@
+  {
+    "name": "Youtube recommended remover",
+    "version": "1.0",
+    "description": "Removes recommended videos",
+    "manifest_version": 3,
+    "content_scripts":[{
+	"matches":["*://www.youtube.com/watch*"],
+	"js": ["black.js"],
+	"run_at": "document_end"
+	   }]
+  }
